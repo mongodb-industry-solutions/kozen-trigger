@@ -9,6 +9,12 @@ import ioc from "./configs/ioc.json";
 
 export class TriggerModule extends KzModule {
 
+    constructor(dependency?: any) {
+        super(dependency);
+        this.metadata.summary = 'Module for managing self-hosted MongoDB triggers';
+        this.metadata.alias = 'trigger';
+    }
+
     public register(config: IConfig | null, opts?: any): Promise<Record<string, IDependency> | null> {
         let dep: Record<string, any> = {};
         switch (config?.type) {
@@ -19,10 +25,7 @@ export class TriggerModule extends KzModule {
                 dep = ioc;
                 break;
         }
-        for (const key in dep) {
-            let item = dep[key] as IDependency;
-            item.path = path.join(this.metadata.path || '', item.path || '');
-        }
+        dep = this.fix(dep);
         return Promise.resolve(dep as Record<string, IDependency>);
     }
 }

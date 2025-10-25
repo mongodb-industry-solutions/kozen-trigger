@@ -3,7 +3,7 @@
         "target": "TriggerCLIController",
         "type": "class",
         "lifetime": "transient",
-        "path": "../../../modules/trigger/controllers",
+        "path": "controllers",
         "dependencies": [
             {
                 "key": "assistant",
