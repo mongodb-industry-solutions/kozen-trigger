@@ -1,9 +1,4 @@
-// import { KzModule } from "../../shared/controllers/KzModule";
-// import { IConfig } from "../../shared/models/Config";
-// import { IDependency } from "../../shared/tools";
-
 import { IConfig, IDependency, KzModule } from "@mongodb-solution-assurance/kozen";
-import path from "path";
 import cli from "./configs/cli.json";
 import ioc from "./configs/ioc.json";
 

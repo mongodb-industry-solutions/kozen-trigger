@@ -8,12 +8,6 @@ import path from 'node:path';
 import { ITriggerOptions } from '../models/TriggerOptions';
 import { ChangeStreamService } from '../services/ChangeStreamService';
 import { CLIController, FileService, IArgs, IConfig, IIoC, ILogger } from '@mongodb-solution-assurance/kozen';
-// import { CLIController } from '../../../applications/cli/controllers/CLIController';
-// import { IArgs } from '../../../shared/models/Args';
-// import { IConfig } from '../../../shared/models/Config';
-// import { FileService } from '../../../shared/services/FileService';
-// import { IIoC } from '../../../shared/tools';
-// import { ILogger } from '../../../shared/tools/log/types';
 
 /**
  * @class TriggerCLIController
