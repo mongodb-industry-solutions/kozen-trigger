@@ -81,6 +81,6 @@ export class TriggerCLIController extends CLIController {
     public async help(): Promise<void> {
         const dir = process.env.DOCS_DIR || path.resolve(__dirname, '../docs');
         const helpText = await this.srvFile?.select('trigger', dir);
-        console.log(helpText);
+        super.help('TOOL: Trigger Manager', helpText);
     }
 }
