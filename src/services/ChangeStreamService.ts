@@ -1,6 +1,7 @@
 import { ChangeStream, ChangeStreamDocument, Document, MongoClient } from 'mongodb';
-import { IIoC } from '../../../shared/tools';
-import { ILogger } from '../../../shared/tools/log/types';
+import { IIoC, ILogger } from '@mongodb-solution-assurance/kozen';
+// import { IIoC } from '../../../shared/tools';
+// import { ILogger } from '../../../shared/tools/log/types';
 import { ITriggerDelegate } from '../models/TriggerDelegate';
 import { ITriggerOptions } from '../models/TriggerOptions';
 import { ITriggerTools } from '../models/TriggerTools';
