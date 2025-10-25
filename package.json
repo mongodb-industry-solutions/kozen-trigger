@@ -13,7 +13,8 @@
     "start": "node dist/bin/kozen.js",
     "dev": "ts-node bin/kozen.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc && npm run copy:txt",
+    "copy:txt": "copyfiles -u 1 src/**/*.txt dist/"
   },
   "repository": {
     "type": "git",
@@ -36,11 +37,12 @@
     "node": ">=18"
   },
   "dependencies": {
-    "mongodb": "^6.17.0",
-    "@mongodb-solution-assurance/kozen": "^1.0.17"
+    "@mongodb-solution-assurance/kozen": "^1.1.0",
+    "mongodb": "^6.17.0"
   },
   "devDependencies": {
     "@types/node": "^18.19.127",
+    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "ts-node": "^10.9.0",
     "tslint": "^6.1.3",
