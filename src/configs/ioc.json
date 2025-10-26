@@ -3,7 +3,7 @@
         "target": "ChangeStreamService",
         "type": "class",
         "lifetime": "transient",
-        "path": "../../../modules/trigger/services",
+        "path": "services",
         "dependencies": [
             {
                 "key": "assistant",

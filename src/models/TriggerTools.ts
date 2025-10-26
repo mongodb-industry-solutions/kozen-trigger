@@ -1,5 +1,5 @@
+import { IIoC } from "@mongodb-solution-assurance/kozen";
 import { ChangeStream, ChangeStreamDocument, Collection, Db, Document } from "mongodb";
-import { IIoC } from "../../../shared/tools";
 
 export interface ITriggerTools {
     assistant?: IIoC;
@@ -9,4 +9,4 @@ export interface ITriggerTools {
     collection?: Collection<Document>;
     dbName?: string;
     db?: Db;
-} 
+}

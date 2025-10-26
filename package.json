@@ -1,6 +1,6 @@
 {
   "name": "@mongodb-solution-assurance/kozen-trigger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module for the Kozen framework that provides support for self-hosted MongoDB triggers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,10 +10,13 @@
     "README.md"
   ],
   "scripts": {
-    "start": "node dist/bin/kozen.js",
-    "dev": "ts-node bin/kozen.ts",
+    "start": "npm run bin:kozen:js --config=kozen.js.json",
+    "dev": "npm run bin:kozen:ts --config=kozen.ts.json",
+    "build": "tsc && npm run copy:txt",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "copy:txt": "copyfiles -u 1 src/**/*.txt dist/",
+    "bin:kozen:ts": "ts-node node_modules/@mongodb-solution-assurance/kozen/dist/bin/kozen.js",
+    "bin:kozen:js": "npx kozen"
   },
   "repository": {
     "type": "git",
@@ -36,11 +39,12 @@
     "node": ">=18"
   },
   "dependencies": {
-    "mongodb": "^6.17.0",
-    "@mongodb-solution-assurance/kozen": "^1.0.17"
+    "@mongodb-solution-assurance/kozen": "^1.1.1",
+    "mongodb": "^6.17.0"
   },
   "devDependencies": {
     "@types/node": "^18.19.127",
+    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "ts-node": "^10.9.0",
     "tslint": "^6.1.3",

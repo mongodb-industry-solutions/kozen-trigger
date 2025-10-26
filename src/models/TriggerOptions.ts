@@ -1,5 +1,4 @@
-import { IDependency } from "../../../shared/tools";
-import { IMdbClientOpt } from "../../../shared/tools/mdb/MdbClientOpt";
+import { IDependency, IMdbClientOpt } from "@mongodb-solution-assurance/kozen";
 
 /**
  * Configuration interface for trigger management
