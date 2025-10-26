@@ -5,14 +5,9 @@
  * @version 1.1.0
  */
 import path from 'node:path';
-import { CLIController } from '../../../applications/cli/controllers/CLIController';
-import { IArgs } from '../../../shared/models/Args';
-import { IConfig } from '../../../shared/models/Config';
-import { FileService } from '../../../shared/services/FileService';
-import { IIoC } from '../../../shared/tools';
-import { ILogger } from '../../../shared/tools/log/types';
 import { ITriggerOptions } from '../models/TriggerOptions';
 import { ChangeStreamService } from '../services/ChangeStreamService';
+import { CLIController, FileService, IArgs, IConfig, IIoC, ILogger } from '@mongodb-solution-assurance/kozen';
 
 /**
  * @class TriggerCLIController
@@ -80,6 +75,6 @@ export class TriggerCLIController extends CLIController {
     public async help(): Promise<void> {
         const dir = process.env.DOCS_DIR || path.resolve(__dirname, '../docs');
         const helpText = await this.srvFile?.select('trigger', dir);
-        console.log(helpText);
+        super.help('TOOL: Trigger Manager', helpText);
     }
 }
