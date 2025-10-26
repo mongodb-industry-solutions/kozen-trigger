@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "start": "node dist/bin/kozen.js",
-    "dev": "ts-node bin/kozen.ts",
+    "dev": "ts-node node_modules/@mongodb-solution-assurance/kozen/dist/bin/kozen.js --config=kozen.ts.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && npm run copy:txt",
     "copy:txt": "copyfiles -u 1 src/**/*.txt dist/"
