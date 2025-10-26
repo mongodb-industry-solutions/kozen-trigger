@@ -7,7 +7,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "🛠️ Dist",
+      "name": "🛠️ JavaScript",
       "runtimeExecutable": "npx",
       "console": "integratedTerminal",
       "runtimeArgs": [
@@ -25,18 +25,17 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "🛠️ Develop",
-      "runtimeExecutable": "npm",
+      "name": "🛠️ TypeScript",
+      "runtimeExecutable": "ts-node",
       "console": "integratedTerminal",
       "runtimeArgs": [
-        "run",
-        "dev"
+        "node_modules/@mongodb-solution-assurance/kozen/dist/bin/kozen.js"
       ],
       "skipFiles": [
         "<node_internals>/**"
       ],
       "env": {
-        "KOZEN_CONFIG": "kozen.json",
+        "KOZEN_CONFIG": "kozen.ts.json",
         "KOZEN_LOG_LEVEL": "INFO",
         "KOZEN_LOG_TYPE": "object"
       },
