@@ -31,12 +31,13 @@ export class TriggerCLIController extends CLIController {
      */
     public async start(options: ITriggerOptions): Promise<{ await: boolean }> {
         try {
+            options.flow = options.flow || this.getId(options as unknown as IConfig);
             await this.srvTrigger?.start(options);
             return { await: true };
         } catch (error) {
             this.logger?.error({
                 flow: this.getId(options as unknown as IConfig),
-                src: 'Controller:Trigger:start',
+                src: 'Trigger:Controller:Start',
                 message: `❌ Failed to start trigger on <'${options.mdb?.collection}'> collection': ${(error as Error).message}`
             });
             return { await: false };
