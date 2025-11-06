@@ -50,6 +50,7 @@ export class ChangeStreamService {
             this.changeStream.on('change', (change) => this.onChange(change, delegate, tools));
             this.logger?.info({
                 flow: options?.flow,
+                src: 'Trigger:Service:Start',
                 message: `Trigger as service started`,
                 data: {
                     database: options.mdb.database,
@@ -57,11 +58,7 @@ export class ChangeStreamService {
                 }
             });
         } catch (error) {
-            this.logger?.error({
-                flow: options?.flow,
-                src: 'Service:Trigger:start',
-                message: `Error starting change stream: ${error instanceof Error ? error.message : String(error)}`
-            });
+            throw new Error(`Error starting change stream: ${error instanceof Error ? error.message : String(error)}`);
         }
     }
 
@@ -95,7 +92,7 @@ export class ChangeStreamService {
         } catch (error) {
             this.logger?.error({
                 flow: tools?.flow,
-                src: 'Service:Trigger:onChange',
+                src: 'Trigger:Service:onChange',
                 message: `Error handling change event: <${change.operationType}> ${error instanceof Error ? error.message : String(error)}`
             });
         }
