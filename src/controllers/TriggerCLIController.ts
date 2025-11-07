@@ -56,8 +56,9 @@ export class TriggerCLIController extends CLIController {
         parsed.opt = parsed.opt || {};
         parsed.mdb = parsed.mdb || {};
         parsed.opt.key = parsed.opt.key || parsed.key || process.env.KOZEN_TRIGGER_KEY || 'trigger:delegate:default';
-        parsed.opt.file = parsed.opt.file || parsed.file || process.env.KOZEN_TRIGGER_FILE;
+        parsed.opt.file = parsed.opt.file || parsed.file || parsed.delegateFile || process.env.KOZEN_TRIGGER_FILE || process.env.KOZEN_TRIGGER_DELEGATE_FILE;
         parsed.opt.type = 'instance';
+        parsed.opt.moduleType = process.env.KOZEN_TRIGGER_DELEGATE_TYPE || parsed.delegateType;
         parsed.mdb.collection = parsed.mdb.collection || parsed.collection || process.env.KOZEN_TRIGGER_COLLECTION;
         parsed.mdb.database = parsed.mdb.database || parsed.database || process.env.KOZEN_TRIGGER_DATABASE;
         parsed.mdb.uri = parsed.mdb.uri || parsed.uri || process.env.KOZEN_TRIGGER_URI;
