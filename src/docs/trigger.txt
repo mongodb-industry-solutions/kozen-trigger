@@ -35,6 +35,8 @@ Trigger Options:
                                     Example: mongodb+srv://user:pass@host/db
     --database=<name>               MongoDB database to watch (REQUIRED)
     --collection=<name>             MongoDB collection to watch (REQUIRED)
+    --delegateType=<value>          Module Systems Type with values (esm, mjs, module, cjs, commonjs)
+    --delegateFile=<value>          alias for --file
 
 Environment Variables:
     KOZEN_CONFIG                    Default value assigned to the --config property
@@ -44,6 +46,8 @@ Environment Variables:
 
     KOZEN_TRIGGER_KEY               Default value assigned to the --key property
     KOZEN_TRIGGER_FILE              Default value assigned to the --file property
+    KOZEN_TRIGGER_DELEGATE_FILE     Default value assigned to the --delegateFile property
+    KOZEN_TRIGGER_DELEGATE_TYPE     Default value assigned to the --delegateType property
     KOZEN_TRIGGER_COLLECTION        Default value assigned to the --collection property
     KOZEN_TRIGGER_DATABASE          Default value assigned to the --database property
     KOZEN_TRIGGER_URI               Default value assigned to the --uri property
