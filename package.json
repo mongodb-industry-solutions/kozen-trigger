@@ -39,7 +39,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@mongodb-solution-assurance/kozen": "^1.1.6",
+    "@mongodb-solution-assurance/kozen": "^1.1.10",
     "mongodb": "^6.17.0"
   },
   "devDependencies": {
