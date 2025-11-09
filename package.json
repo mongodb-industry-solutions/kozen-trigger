@@ -1,6 +1,6 @@
 {
   "name": "@mongodb-solution-assurance/kozen-trigger",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Module for the Kozen framework that provides support for self-hosted MongoDB triggers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -39,7 +39,7 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@mongodb-solution-assurance/kozen": "^1.1.6",
+    "@mongodb-solution-assurance/kozen": "^1.1.10",
     "mongodb": "^6.17.0"
   },
   "devDependencies": {
