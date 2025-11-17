@@ -17,5 +17,7 @@ Quick checklist:
 For better understanding, refer to the documentation here: [documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki).
 
 ## References
+- [Kozen Triggers Full Documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki)
+- [Kozen Triggers through DeepWiki](https://deepwiki.com/mongodb-industry-solutions/kozen-trigger/1-overview)
+- [Kozen Full Documentation](https://github.com/mongodb-industry-solutions/kozen-engine/wiki)
 - [Trigger Module Documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki)
-- [Kozen Documentation](https://github.com/mongodb-industry-solutions/kozen-engine/wiki)
