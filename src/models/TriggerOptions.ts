@@ -1,4 +1,4 @@
-import { IDependency, IMdbClientOpt } from "@mongodb-solution-assurance/kozen";
+import { IDependency, IMdbClientOpt } from "@kozen/engine";
 
 /**
  * Configuration interface for trigger management

@@ -1,3 +1,5 @@
+# 🏠 Kozen Trigger Manager Module
+
 In Kozen, the modules are used as independent tools. The Triggers module becomes a solution designed to provide support for Self-Hosted Triggers in a simple way, whether you're using MongoDB Atlas, Enterprise Advanced, or Community Edition. This helps streamline the process of managing triggers across different MongoDB deployments.
 
 ## 📚 Self‑Hosted Triggers
@@ -19,5 +21,10 @@ For better understanding, refer to the documentation here: [documentation](https
 ## References
 - [Kozen Triggers Full Documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki)
 - [Kozen Triggers through DeepWiki](https://deepwiki.com/mongodb-industry-solutions/kozen-trigger/1-overview)
-- [Kozen Full Documentation](https://github.com/mongodb-industry-solutions/kozen-engine/wiki)
-- [Trigger Module Documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki)
+- [Disclaimer and Usage Policy](https://github.com/mongodb-industry-solutions/kozen-engine/wiki/POLICY)
+- [How to Contribute to Kozen Ecosystem](https://github.com/mongodb-industry-solutions/kozen-engine/wiki/Contribute)
+- [Official Kozen Documentation](https://github.com/mongodb-industry-solutions/kozen-engine/wiki)
+
+---
+
+← Previous: [Home](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki) | Next: [Get-Started](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki/Get-Started) →
