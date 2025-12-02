@@ -40,3 +40,9 @@ export class TriggerModule extends KzModule {
         return Promise.resolve(dep as Record<string, IDependency>);
     }
 }
+
+export default TriggerModule;
+export { ChangeStreamService } from './services/ChangeStreamService';
+export { ITriggerOptions } from './models/TriggerOptions';
+export { ITriggerDelegate } from './models/TriggerDelegate';
+export { ITriggerTools } from './models/TriggerTools';
