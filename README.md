@@ -1,22 +1,33 @@
-# 🏠 Kozen Trigger Manager Module
+# 🏠 Kozen Triggers
 
-In Kozen, the modules are used as independent tools. The Triggers module becomes a solution designed to provide support for Self-Hosted Triggers in a simple way, whether you're using MongoDB Atlas, Enterprise Advanced, or Community Edition. This helps streamline the process of managing triggers across different MongoDB deployments.
+[![npm version](https://img.shields.io/npm/v/@mongodb-solution-assurance/kozen-trigger.svg)](https://www.npmjs.com/package/@mongodb-solution-assurance/kozen-trigger)
+[![npm downloads](https://img.shields.io/npm/dw/@mongodb-solution-assurance/kozen-trigger.svg)](https://www.npmjs.com/package/@mongodb-solution-assurance/kozen-trigger)
+[![npm total downloads](https://img.shields.io/npm/dt/@mongodb-solution-assurance/kozen-trigger.svg)](https://www.npmjs.com/package/@mongodb-solution-assurance/kozen-trigger)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](https://nodejs.org/)
+[![Dependencies](https://img.shields.io/librariesio/release/npm/@mongodb-solution-assurance/kozen-trigger)](https://libraries.io/npm/@mongodb-solution-assurance%2Fkozen-trigger)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-6.17-green.svg?logo=mongodb)](https://www.mongodb.com/)
+[![GitHub issues](https://img.shields.io/github/issues/mongodb-industry-solutions/kozen-trigger.svg)](https://github.com/mongodb-industry-solutions/kozen-trigger/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mongodb-industry-solutions/kozen-trigger.svg)](https://github.com/mongodb-industry-solutions/kozen-trigger/stargazers)
+
+Kozen modules function as independent tools. The Triggers module simplifies the implementation of self-hosted triggers for MongoDB Atlas, Enterprise Advanced, or Community Edition. This tool streamlines trigger management across diverse MongoDB deployments.
 
 ## 📚 Self‑Hosted Triggers
 
-Kozen can run MongoDB Change Stream based triggers on your own infrastructure. If you’ve used MongoDB Atlas Triggers, think of this as a self‑hosted alternative: you write a small JavaScript file (the delegate) that exports simple functions per operation, and Kozen wires everything up to stream change events into your code.
+Kozen executes MongoDB Change Stream triggers directly on your infrastructure. Designed as a self-hosted alternative to MongoDB Atlas Triggers, Kozen allows you to define a JavaScript "delegate" file. This file exports operation-specific functions, which Kozen utilizes to stream change events directly into your code.
 
-## 🎯 Overview
+## 🧪 Comparison and Usage
 
-Atlas context: MongoDB Atlas provides a fully managed Triggers service. Kozen offers a similar capability you can run anywhere (local, on‑premises, cloud), while keeping your logic in a single, easy‑to‑maintain JS file.
+While MongoDB Atlas provides a fully managed Triggers service, Kozen delivers similar capabilities for local, on-premises, or cloud environments. It centralizes logic in a single, maintainable JavaScript file.
 
-Quick checklist:
+## 🚀 Quick Start
 - Install Kozen.
 - Write the delegate with `insert`/`update`/`delete`/`replace` and optional `on`/`default`.
 - Fill `.env` with `KOZEN_TRIGGER_*` settings.
 - Start the service (see step 2 below) and verify logs.
 
-For better understanding, refer to the documentation here: [documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki).
+For more details, refer to the documentation here: [documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki).
 
 ## References
 - [Kozen Triggers Full Documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki)
@@ -28,3 +39,4 @@ For better understanding, refer to the documentation here: [documentation](https
 ---
 
 ← Previous: [Home](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki) | Next: [Get-Started](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki/Get-Started) →
+
