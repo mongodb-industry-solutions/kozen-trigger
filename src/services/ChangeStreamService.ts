@@ -1,5 +1,5 @@
 import { ChangeStream, ChangeStreamDocument, Document, MongoClient } from 'mongodb';
-import { IIoC, ILogger } from '@mongodb-solution-assurance/kozen';
+import { IIoC, ILogger } from '@kozen/engine';
 import { ITriggerDelegate } from '../models/TriggerDelegate';
 import { ITriggerOptions } from '../models/TriggerOptions';
 import { ITriggerTools } from '../models/TriggerTools';

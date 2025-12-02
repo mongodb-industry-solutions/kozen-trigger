@@ -1,4 +1,4 @@
-# Kozen Triggers
+# 🏠 Kozen Triggers
 
 [![npm version](https://img.shields.io/npm/v/@mongodb-solution-assurance/kozen-trigger.svg)](https://www.npmjs.com/package/@mongodb-solution-assurance/kozen-trigger)
 [![npm downloads](https://img.shields.io/npm/dw/@mongodb-solution-assurance/kozen-trigger.svg)](https://www.npmjs.com/package/@mongodb-solution-assurance/kozen-trigger)
@@ -32,5 +32,11 @@ For more details, refer to the documentation here: [documentation](https://githu
 ## References
 - [Kozen Triggers Full Documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki)
 - [Kozen Triggers through DeepWiki](https://deepwiki.com/mongodb-industry-solutions/kozen-trigger/1-overview)
-- [Kozen Full Documentation](https://github.com/mongodb-industry-solutions/kozen-engine/wiki)
-- [Trigger Module Documentation](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki)
+- [Disclaimer and Usage Policy](https://github.com/mongodb-industry-solutions/kozen-engine/wiki/POLICY)
+- [How to Contribute to Kozen Ecosystem](https://github.com/mongodb-industry-solutions/kozen-engine/wiki/Contribute)
+- [Official Kozen Documentation](https://github.com/mongodb-industry-solutions/kozen-engine/wiki)
+
+---
+
+← Previous: [Home](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki) | Next: [Get-Started](https://github.com/mongodb-industry-solutions/kozen-trigger/wiki/Get-Started) →
+

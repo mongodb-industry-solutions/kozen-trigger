@@ -1,4 +1,4 @@
-import { IIoC } from "@mongodb-solution-assurance/kozen";
+import { IIoC } from "@kozen/engine";
 import { ChangeStream, ChangeStreamDocument, Collection, Db, Document } from "mongodb";
 
 export interface ITriggerTools {
