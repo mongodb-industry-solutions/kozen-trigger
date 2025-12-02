@@ -7,7 +7,7 @@
 import path from 'node:path';
 import { ITriggerOptions } from '../models/TriggerOptions';
 import { ChangeStreamService } from '../services/ChangeStreamService';
-import { CLIController, FileService, IArgs, IConfig, IIoC, ILogger } from '@mongodb-solution-assurance/kozen';
+import { CLIController, FileService, IArgs, IConfig, IIoC, ILogger, IModule } from '@kozen/engine';
 
 /**
  * @class TriggerCLIController
@@ -75,8 +75,14 @@ export class TriggerCLIController extends CLIController {
      * @public
      */
     public async help(): Promise<void> {
+        const mod = await this.assistant?.get<IModule>('module:@kozen/trigger');
         const dir = process.env.DOCS_DIR || path.resolve(__dirname, '../docs');
         const helpText = await this.srvFile?.select('trigger', dir);
-        super.help('TOOL: Trigger Manager', helpText);
+        super.help({
+            title: `'${mod?.metadata?.alias || 'Trigger' }' from '${mod?.metadata?.name}' package`,
+            body: helpText,
+            version: mod?.metadata?.version,
+            uri: mod?.metadata?.uri
+        });
     }
 }
