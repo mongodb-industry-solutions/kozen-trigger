@@ -76,7 +76,7 @@ export class ChangeStreamService {
             }
 
             const on = delegate.on || delegate.default;
-            const handler = delegate[change.operationType as keyof typeof delegate]
+            const handler = delegate[change.operationType as keyof typeof delegate] || (change.operationType === 'delete' && delegate.remove);
 
             if (typeof handler !== 'function' && typeof on !== 'function') {
                 this.logger?.warn({

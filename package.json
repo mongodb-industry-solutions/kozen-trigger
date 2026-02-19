@@ -1,6 +1,6 @@
 {
   "name": "@kozen/trigger",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Module for the Kozen framework that provides support for self-hosted MongoDB triggers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -38,7 +38,7 @@
   "bugs": {
     "url": "https://github.com/mongodb-industry-solutions/kozen-trigger/issues"
   },
-  "homepage": "https://github.com/mongodb-industry-solutions/kozen-iam-rectification/wiki",
+  "homepage": "https://github.com/mongodb-industry-solutions/kozen-trigger/wiki",
   "engines": {
     "node": ">=18"
   },
