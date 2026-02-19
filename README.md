@@ -11,6 +11,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/mongodb-industry-solutions/kozen-trigger.svg)](https://github.com/mongodb-industry-solutions/kozen-trigger/issues)
 [![GitHub stars](https://img.shields.io/github/stars/mongodb-industry-solutions/kozen-trigger.svg)](https://github.com/mongodb-industry-solutions/kozen-trigger/stargazers)
 
+**🌐 Languages / Idiomas:** [English](README.md) | [Español](README.es.md)
+
 Kozen modules function as independent tools. The Triggers module simplifies the implementation of self-hosted triggers for MongoDB Atlas, Enterprise Advanced, or Community Edition. This tool streamlines trigger management across diverse MongoDB deployments.
 
 ## 📚 Self‑Hosted Triggers
