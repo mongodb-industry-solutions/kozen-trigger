@@ -32,7 +32,7 @@ Trigger Options:
                                     Example: trigger:delegate:default
     --file=<path>                   Optional file path associated with delegate resolution
     --uri=<mongodb_uri>             MongoDB connection URI (REQUIRED)
-                                    Example: mongodb+srv://host/db
+                                    Example: mongodb+srv://<host>/<database>
     --database=<name>               MongoDB database to watch (REQUIRED)
     --collection=<name>             MongoDB collection to watch (REQUIRED)
     --delegateType=<value>          Module Systems Type with values (esm, mjs, module, cjs, commonjs)
@@ -65,7 +65,7 @@ Examples:
     # Start watching a collection
     kozen --action=trigger:start \
          --key=trigger:delegate:default \
-         --uri="mongodb+srv://cluster.mongodb.net/?retryWrites=true&w=majority" \
+         --uri="$KOZEN_TRIGGER_URI" \
          --database=app \
          --collection=orders
 
